@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Login</title>
+
+  </head>
+
+  <body>
+    <center>
+    <h1 style=" margin-top: 2cm">Login</h1>
+
+    <form id="login_form" method="post" action="product" >
+      {% csrf_token %}
+      <table cellpadding="10" cellspacing="10">
+	<tr>
+	  <td>USER_NAME</td>
+	  <td><input type="text" name="username" value="" /></td>
+	</tr>
+	<tr>
+	  <td>PASSWORD</td>
+	  <td><input type="password" name="password" value=""  /></td>
+	</tr>
+
+	<tr>
+	  <td><input type="submit" value="submit" /></td>
+      </table>
+
+    </form>
+</center>
+  </body>
+  </html>
